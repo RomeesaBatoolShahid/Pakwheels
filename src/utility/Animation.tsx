@@ -1,5 +1,5 @@
 import { delay } from "framer-motion";
-import { useState, useEffect } from 'react';
+
 
 
 export const Fadeup = (delay: any) => {
@@ -30,27 +30,11 @@ export const FadeLeft = (delay: any) => {
             transition :{
                 duration : 1,
                 delay : delay,
-            }
-        }
-    }
-}
-
-export const RollText = (delay = 0) => {
-    return {
-        hidden: {
-            y: 0, // Start at the top
-        },
-        visible: {
-            y: -48, // Rolls one line up (adjust based on your text height)
-            transition: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 2, // Duration for one full roll
-                delay: delay,
             },
         },
     };
 };
+
 
 
 
