@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { FadeRight, FadeLeft, Fadeup } from '@/utility/Animation';
-import Image from 'next/image';
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react';
 import Car from "@/Components/Car";

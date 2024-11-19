@@ -22,10 +22,10 @@ export default function About() {
             Who We Are
           </h2>
           <p className="text-lg text-gray-600">
-            PakWheels is Pakistan's #1 platform for buying and selling cars. We
+            PakWheels is Pakistans #1 platform for buying and selling cars. We
             bring together a community of car enthusiasts, buyers, and sellers.
             Our mission is to create a seamless, secure, and transparent
-            experience for everyone in the car-selling process. Whether you're
+            experience for everyone in the car-selling process. Whether you are
             looking to sell your car or find the car of your dreams, we make the
             process easy and hassle-free.
           </p>

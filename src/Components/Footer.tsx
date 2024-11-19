@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">About</h3>
             <p className="text-sm mb-4">
-              PakWheels is Pakistan's #1 platform to buy and sell cars. Our mission is to provide a seamless
+              PakWheels is Pakistans #1 platform to buy and sell cars. Our mission is to provide a seamless
               car selling experience, connecting buyers and sellers with ease.
             </p>
            
