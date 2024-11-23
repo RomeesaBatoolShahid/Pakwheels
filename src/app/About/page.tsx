@@ -1,6 +1,6 @@
 // About.js
 import React from 'react';
-import Image from 'next/image'; // If you're using Next.js for optimized images
+import Image from 'next/image'; // Import Image component for optimized images
 
 export default function About() {
   return (
@@ -22,7 +22,7 @@ export default function About() {
             Who We Are
           </h2>
           <p className="text-lg text-gray-600">
-            PakWheels is Pakistans #1 platform for buying and selling cars. We
+            PakWheels is Pakistan&apos;s #1 platform for buying and selling cars. We
             bring together a community of car enthusiasts, buyers, and sellers.
             Our mission is to create a seamless, secure, and transparent
             experience for everyone in the car-selling process. Whether you are
@@ -39,13 +39,12 @@ export default function About() {
 
         {/* Image Section */}
         <div className="relative w-full h-64 md:h-auto">
-          {/* Replace the `src` with your image */}
           <Image
-            src="/9-1.jpg" // Example image path
+            src="/9-1.jpg" // Replace with your image path
             alt="PakWheels Team"
-            layout="responsive"
-            width={800} // Adjust width/height to your image's aspect ratio
-            height={600}
+            layout="responsive" // Ensures responsive image sizing
+            width={800} // Adjust width to match the aspect ratio of your image
+            height={600} // Adjust height to match the aspect ratio of your image
             className="rounded-lg shadow-lg"
           />
         </div>

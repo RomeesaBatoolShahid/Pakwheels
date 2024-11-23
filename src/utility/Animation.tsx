@@ -1,57 +1,50 @@
-import { delay } from "framer-motion";
-
-
-
-export const Fadeup = (delay: any) => {
-    return{
+export const Fadeup = (delay: number) => {
+    return {
         hidden: {
-            opacity : 0,
-            y : 100,
+            opacity: 0,
+            y: 100,
         },
         visible: {
-            opacity : 1,
+            opacity: 1,
             y: 0,
-            transition :{
-                duration : 1,
-                delay : delay,
+            transition: {
+                duration: 1,
+                delay: delay,
             }
         }
     }
 }
-export const FadeLeft = (delay: any) => {
-    return{
+
+export const FadeLeft = (delay: number) => {
+    return {
         hidden: {
-            opacity : 0,
-            x : 100,
+            opacity: 0,
+            x: 100,
         },
         visible: {
-            opacity : 1,
+            opacity: 1,
             x: 0,
-            transition :{
-                duration : 1,
-                delay : delay,
+            transition: {
+                duration: 1,
+                delay: delay,
             },
         },
     };
 };
 
-
-
-
-export const FadeRight = (delay: any) => {
-    return{
+export const FadeRight = (delay: number) => {
+    return {
         hidden: {
-            opacity : 0,
-            x : -100,
+            opacity: 0,
+            x: -100,
         },
         visible: {
-            opacity : 1,
+            opacity: 1,
             x: 0,
-            transition :{
-                duration : 1,
-                delay : delay,
+            transition: {
+                duration: 1,
+                delay: delay,
             }
         }
     }
-  
 }

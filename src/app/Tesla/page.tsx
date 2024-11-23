@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image'; 
 
 const TeslaModelX = () => {
   return (
@@ -8,11 +9,15 @@ const TeslaModelX = () => {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Car Image */}
         <div className="flex-shrink-0 w-full lg:w-1/2">
-          <img
-            src="/tesla.jpeg"  // Replace with actual image path
-            alt="Tesla Model X 2022"
-            className="w-full object-cover h-80 rounded-lg"
-          />
+          <div className="relative w-full h-80">
+            <Image
+              src="/tesla.jpeg"  
+              alt="Tesla Model X 2022"
+              layout="fill"
+              objectFit="cover" 
+              className="rounded-lg"
+            />
+          </div>
         </div>
 
         {/* Car Details */}
@@ -26,7 +31,7 @@ const TeslaModelX = () => {
 
           {/* Button or Contact Form */}
           <button className="inline-block text-white bg-blue-600 hover:bg-blue-800 px-6 py-2 rounded-md text-lg">
-          <Link href="/Thankyou">Buy Now</Link>
+            <Link href="/Thankyou">Buy Now</Link>
           </button>
         </div>
       </div>

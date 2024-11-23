@@ -18,18 +18,18 @@ export default function Contact() {
   // Handle form submission
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault(); // Prevent default form submission behavior
-
+  
     // Simulate form submission (you can replace this with an API call)
     try {
       setFormStatus('success');  // Simulate success
-
+  
       // Reset form fields after successful submission
       setFormData({
         name: '',
         email: '',
         message: '',
       });
-    } catch (error) {
+    } catch {
       setFormStatus('error');  // If there's an error, set error state
     }
   };

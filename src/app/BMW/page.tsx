@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image'; 
 
 const BMWX5 = () => {
   return (
@@ -8,9 +9,11 @@ const BMWX5 = () => {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Car Image */}
         <div className="flex-shrink-0 w-full lg:w-1/2">
-          <img
-            src="/bmw.jpeg"  // Replace with actual image path
+          <Image
+            src="/bmw.jpeg"  
             alt="BMW X5 2019"
+            width={800}  
+            height={500} 
             className="w-full object-cover h-80 rounded-lg"
           />
         </div>
@@ -26,7 +29,7 @@ const BMWX5 = () => {
 
           {/* Button or Contact Form */}
           <button className="inline-block text-white bg-blue-600 hover:bg-blue-800 px-6 py-2 rounded-md text-lg">
-          <Link href="/Thankyou">Buy Now</Link>
+            <Link href="/Thankyou">Buy Now</Link>
           </button>
         </div>
       </div>
