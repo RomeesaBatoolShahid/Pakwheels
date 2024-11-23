@@ -1,11 +1,10 @@
-
 'use client'
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8 mt-12">
+    <footer className="bg-gray-800 text-white py-8 mt-12 relative z-10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Column 1: Quick Links */}
@@ -39,7 +38,6 @@ export default function Footer() {
               PakWheels is Pakistans #1 platform to buy and sell cars. Our mission is to provide a seamless
               car selling experience, connecting buyers and sellers with ease.
             </p>
-           
           </div>
         </div>
 
