@@ -11,8 +11,8 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className='w-full top-0 left-0 bg-black text-white z-50 h-32'>
-      <nav className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <header role="banner" className='w-full top-0 left-0 bg-black text-white z-50 h-32'>
+      <nav role="navigation" className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         {/* Top section with App link and Sign Up buttons */}
         <div className='flex justify-between items-center py-4 border-b-2'>
           <div className='flex gap-3 items-center'>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Menu */}
-          <ul className='hidden md:flex items-center space-x-6 text-sm uppercase font-medium'>
+          <ul className='hidden md:flex items-center space-x-6 text-sm uppercase font-medium z-30'>
             <li><Link href="/About" className='hover:text-gray-300'>About</Link></li>
             <li className='relative'>
               <Link href="/NewCars" className='hover:text-gray-300 flex'>
@@ -65,7 +65,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu (When Open) */}
-      <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} absolute w-full z-60 bg-black text-white p-4`}>
+      <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} absolute w-full  z-40  bg-black text-white p-4 `}>
         <ul className='space-y-4 text-lg'>
           <li><Link href="/About" className='block hover:text-gray-300'>About</Link></li>
           <li><Link href="/NewCars" className='block hover:text-gray-300'>New Cars</Link></li>
