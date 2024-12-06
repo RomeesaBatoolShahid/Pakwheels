@@ -11,7 +11,7 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header role="banner" className="w-full top-0 left-0 bg-black text-white z-50 h-32">
+    <header role="banner" className="fixed w-full top-0 left-0 bg-black text-white z-50 h-32">
       <nav role="navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top section with App link and Sign Up buttons */}
         <div className="flex justify-between items-center py-4 border-b-2">

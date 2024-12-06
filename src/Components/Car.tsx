@@ -6,7 +6,7 @@ export default function Car() {
     <div>
         
         {/* Image */}
-        <div>
+        <div className='mt-48'>
                     <Image width={1980} height={1080} className='translate-z-0 w-[54rem] h-full' src="/home.png" alt="home" />
                 </div>
     </div>
