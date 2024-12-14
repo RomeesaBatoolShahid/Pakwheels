@@ -8,14 +8,17 @@ import { Check } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <div className='text-center justify-center py-4 relative z-0'>
-            <div className='mt-48'>
-                    <motion.img
-                     variants={Fadeup(0.5)}
-                     initial="hidden"
-                     animate="visible" 
-                    src="/home.png" alt="cars" className='translate-z-0 w-[54rem] h-full ml-44'/>
-                </div>
+        <div className='text-center justify-center py-4 '>
+          <div className='pt-24 flex justify-center sm:mt-24'>
+    <motion.img
+        variants={Fadeup(0.5)}
+        initial="hidden"
+        animate="visible"
+        src="/home.png" 
+        alt="cars" 
+        className='translate-z-0 w-[54rem] h-full sm:w-full sm:h-auto sm:ml-0 md:w-[30rem] lg:w-[40rem]'
+    />
+</div>
             <div className='mt-20 w-full h-full'>
                 <motion.div
                     variants={Fadeup(0.5)}

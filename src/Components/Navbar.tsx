@@ -11,7 +11,7 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header role="banner" className="fixed w-full top-0 left-0 bg-black text-white z-50 h-32">
+    <header role="banner" className="fixed w-full top-0 left-0 bg-black text-white h-32">
       <nav role="navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top section with App link and Sign Up buttons */}
         <div className="flex justify-between items-center py-4 border-b-2">
@@ -37,7 +37,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center space-x-6 text-sm uppercase font-medium z-30">
+          <ul className="hidden md:flex items-center space-x-6 text-sm uppercase font-medium ">
             <li><Link href="/About" className="hover:text-gray-300">About</Link></li>
             <li className="relative">
               <Link href="/NewCars" className="hover:text-gray-300 flex">
