@@ -3,18 +3,26 @@ import React from 'react'
 import { FadeRight, FadeLeft, Fadeup } from '@/utility/Animation';
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react';
-import Car from "@/Components/Car";
+
+
 
 export default function Hero() {
     return (
         <div className='text-center justify-center py-4 relative z-0'>
+            <div className='mt-48'>
+                    <motion.img
+                     variants={Fadeup(0.5)}
+                     initial="hidden"
+                     animate="visible" 
+                    src="/home.png" alt="cars" className='translate-z-0 w-[54rem] h-full ml-44'/>
+                </div>
             <div className='mt-20 w-full h-full'>
                 <motion.div
                     variants={Fadeup(0.5)}
                     initial="hidden"
                     animate="visible"
                     className='w-full h-full flex justify-center'>
-                    <Car />
+                  
                 </motion.div>
             </div>
             <br /><br />
